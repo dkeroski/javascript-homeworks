@@ -1,23 +1,25 @@
 $(function() {
-    $("<form/>")
-    .appendTo("body");
+    $("<form>")
+    .addClass("form-group")
+    .appendTo("html");
     
-    $("<fieldset/>")
+    $("<fieldset>")
+     .attr("id" ,"#register-form")
      .addClass("form-group")
      .appendTo("form");
    
     var firstName=
-     $("<lebel for='fisrtName'><i class=\"fa fa-user fa-2x\"></i></lebel><input type='text' class='form-control' placeholder='First Name' />")
+     $("<lebel for='fisrtName'><i class=\"fa fa-user fa-2x\"></i></lebel><input type='text' class='form-control' placeholder='First Name' /> ")
      .attr("id", "firstName")
      .appendTo("fieldset");
 
- var LastName = 
+ var lastName = 
      $("<lebel for='lastName'><i class=\"fa fa-user fa-2x\"></i></lebel><input type='text' class='form-control'  placeholder='Last Name' />")
      .attr("id", "myfieldid")
      .appendTo("fieldset");
 
   var email = 
-     $("<lebel for='email'> <i class=\"fa fa-envelope fa-2x\"></i> </lebel><input type='email' class='form-control' placeholder='Email address'/>")
+     $("<lebel for='email'> <i class=\"fa fa-envelope fa-2x\"></i> </lebel><input type='email'  class='form-control' placeholder='Email address'/>")
      .attr("id", "email")
      .attr("name", "myfieldid")
      .appendTo("fieldset");
@@ -34,10 +36,11 @@ $(function() {
    
      
  var button = $("<button>SIGN UP    </button>")
+     .attr("id" , "button")
      .addClass("btn btn-primary")  
      .appendTo("fieldset");
  
  
- 
- 
+
+
 }); //end of function
