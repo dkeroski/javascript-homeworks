@@ -14,3 +14,10 @@ form {
     padding: 20px ;
 }
 
+#showPass {
+    margin: 10px;
+}
+
+.error {
+    color: red;
+}
